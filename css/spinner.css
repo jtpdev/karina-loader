@@ -1,5 +1,88 @@
+html {
+    background-color: rgba(46,7,96,0.5);
+}
+
+html, body, .loader-container {
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+
 .star {
-    -webkit-animation: scale .75s -.24s infinite cubic-bezier(.2,.68,.18,1.08);
-    animation: scale .75s -.24s infinite cubic-bezier(.2,.68,.18,1.08);
     background-color: #FFF;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin: 2px;
+    /* -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; */
+    /* transition: .25s ease-in-out; */
+    
+}
+
+._1 {
+    margin-left: 50%;
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+
+._2 {
+    margin-left: 75%;
+}
+
+._3 {
+    margin-left: 25%;
+}
+
+._4 {
+    margin-left: 50%;
+    margin-top: 10%;
+}
+
+._5 {
+    margin-left: 23%;
+    margin-top: 25px;
+}
+
+._6 {
+    margin-left: 79%;
+    margin-top: 10%;
+}
+
+._7 {
+    margin-left: 60%;
+    margin-top: 30%;
+}
+
+._8 {
+    margin-left: 89%;
+    margin-top: 30%;
+}
+
+._9 {
+    margin-top: 30%;
+    margin-left: 45%;
+}
+
+.anim {
+    animation-name: pulse_animation;
+	animation-duration: 1000ms;
+	transform-origin:50% 50%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.loader {
+   max-width: 500px;
+}
+
+@keyframes pulse_animation {
+	0% { transform: scale(0.2); }
+	30% { transform: scale(0.5); }
+	40% { transform: scale(1.08); }
+	50% { transform: scale(1); }
+	60% { transform: scale(1); }
+	70% { transform: scale(1.05); }
+	80% { transform: scale(0.5); }
+	100% { transform: scale(0.2); }
 }
