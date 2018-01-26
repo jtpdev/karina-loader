@@ -1,0 +1,5 @@
+.star {
+    -webkit-animation: scale .75s -.24s infinite cubic-bezier(.2,.68,.18,1.08);
+    animation: scale .75s -.24s infinite cubic-bezier(.2,.68,.18,1.08);
+    background-color: #FFF;
+}
